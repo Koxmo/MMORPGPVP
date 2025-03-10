@@ -1,0 +1,122 @@
+[gd_scene load_steps=10 format=3 uid="uid://p1vb5fhgvx2p"]
+
+[ext_resource type="Script" path="res://gui/equipment_gui.gd" id="1_bgspk"]
+[ext_resource type="Texture2D" uid="uid://cyvsnxqdcojct" path="res://Sprite/Menu/Cadre menu.png" id="2_ndj4d"]
+[ext_resource type="PackedScene" uid="uid://dhh62qhng0hrt" path="res://gui/slot_gui.tscn" id="3_tisaq"]
+[ext_resource type="Texture2D" uid="uid://cbq4rbdmk2vta" path="res://Sprite/Menu/fond_épée.png" id="4_dpjku"]
+[ext_resource type="Texture2D" uid="uid://cehkihxgqhref" path="res://Sprite/Menu/Skin.png" id="4_te8e6"]
+[ext_resource type="Texture2D" uid="uid://bx700cl54mx3v" path="res://Sprite/Menu/spirit.png" id="5_ma3yj"]
+[ext_resource type="Texture2D" uid="uid://dpkubb7eju7ux" path="res://Sprite/Menu/potion.png" id="6_1sqq4"]
+[ext_resource type="Texture2D" uid="uid://bbc0easa6rqwq" path="res://Sprite/Menu/essence.png" id="7_fhd5v"]
+[ext_resource type="Texture2D" uid="uid://d36p3a50vxlmu" path="res://Sprite/Menu/jewel.png" id="8_klei1"]
+
+[node name="EquipementGui" type="Control"]
+custom_minimum_size = Vector2(40, 72)
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 72.0
+script = ExtResource("1_bgspk")
+
+[node name="NinePatchRect" type="NinePatchRect" parent="."]
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 72.0
+texture = ExtResource("2_ndj4d")
+patch_margin_left = 6
+patch_margin_top = 6
+patch_margin_right = 6
+patch_margin_bottom = 6
+
+[node name="GridContainer" type="GridContainer" parent="NinePatchRect"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -18.0
+offset_top = -28.0
+offset_right = 18.0
+offset_bottom = 28.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 2
+
+[node name="Skin" parent="NinePatchRect/GridContainer" instance=ExtResource("3_tisaq")]
+layout_mode = 2
+
+[node name="Icon2" type="TextureRect" parent="NinePatchRect/GridContainer/Skin"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 14.0
+offset_bottom = 14.0
+texture = ExtResource("4_te8e6")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Spirit" parent="NinePatchRect/GridContainer" instance=ExtResource("3_tisaq")]
+layout_mode = 2
+
+[node name="Icon2" type="TextureRect" parent="NinePatchRect/GridContainer/Spirit"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 14.0
+offset_bottom = 14.0
+texture = ExtResource("5_ma3yj")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="WeaponSlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_tisaq")]
+layout_mode = 2
+
+[node name="Icon" type="TextureRect" parent="NinePatchRect/GridContainer/WeaponSlot"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 14.0
+offset_bottom = 14.0
+texture = ExtResource("4_dpjku")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="Essence" parent="NinePatchRect/GridContainer" instance=ExtResource("3_tisaq")]
+layout_mode = 2
+
+[node name="Icon2" type="TextureRect" parent="NinePatchRect/GridContainer/Essence"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 14.0
+offset_bottom = 14.0
+texture = ExtResource("7_fhd5v")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="jewel" parent="NinePatchRect/GridContainer" instance=ExtResource("3_tisaq")]
+layout_mode = 2
+
+[node name="Icon2" type="TextureRect" parent="NinePatchRect/GridContainer/jewel"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 14.0
+offset_bottom = 14.0
+texture = ExtResource("8_klei1")
+expand_mode = 3
+stretch_mode = 5
+
+[node name="PotionSlot" parent="NinePatchRect/GridContainer" instance=ExtResource("3_tisaq")]
+layout_mode = 2
+
+[node name="Icon3" type="TextureRect" parent="NinePatchRect/GridContainer/PotionSlot"]
+layout_mode = 0
+offset_left = 2.0
+offset_top = 2.0
+offset_right = 14.0
+offset_bottom = 14.0
+texture = ExtResource("6_1sqq4")
+expand_mode = 3
+stretch_mode = 5

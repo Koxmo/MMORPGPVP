@@ -1,0 +1,16 @@
+[gd_scene format=3 uid="uid://df1c2yxdw7l5f"]
+
+[node name="PopupQuantite" type="Control"]
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+
+[node name="PopupBox" type="PopupPanel" parent="."]
+visible = true
+
+[node name="ContentContainer" type="VBoxContainer" parent="PopupBox"]
+offset_left = 4.0
+offset_top = 4.0
+offset_right = 96.0
+offset_bottom = 96.0

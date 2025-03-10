@@ -1,0 +1,8 @@
+[gd_scene load_steps=3 format=3 uid="uid://c8bnbcobb5a6i"]
+
+[ext_resource type="Texture2D" uid="uid://uevbs8fyw8su" path="res://Sprite/Menu/Bouton inventaire.png" id="1_gjt7m"]
+[ext_resource type="Texture2D" uid="uid://dofoy4g5s138i" path="res://Sprite/Menu/Bouton inventaire appuyé.png" id="2_msbao"]
+
+[node name="InventoryButton" type="TouchScreenButton"]
+texture_normal = ExtResource("1_gjt7m")
+texture_pressed = ExtResource("2_msbao")

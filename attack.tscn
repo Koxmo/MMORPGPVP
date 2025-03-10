@@ -1,0 +1,10 @@
+[gd_scene load_steps=3 format=3 uid="uid://doyte7i6qnubo"]
+
+[ext_resource type="Texture2D" uid="uid://gffirf6ghbjv" path="res://Sprite/Menu/Bouton.png" id="1_nktvi"]
+[ext_resource type="Texture2D" uid="uid://bq82flvw5vxo4" path="res://Sprite/Menu/Bouton pressé.png" id="2_j1f2h"]
+
+[node name="Attack" type="TouchScreenButton"]
+position = Vector2(382, 194)
+scale = Vector2(0.3, 0.3)
+texture_normal = ExtResource("1_nktvi")
+texture_pressed = ExtResource("2_j1f2h")

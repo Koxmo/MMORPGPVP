@@ -1,0 +1,15 @@
+[gd_scene load_steps=5 format=3 uid="uid://boyu8ymppapjw"]
+
+[ext_resource type="Texture2D" uid="uid://cxb36wgtf7h1r" path="res://Sprite/Life Barre/lifeBarBlack.png" id="1_0pil0"]
+[ext_resource type="Texture2D" uid="uid://chxuimth7oayr" path="res://Sprite/Life Barre/cadreLifeBarBlack4.png" id="2_xbm4t"]
+[ext_resource type="Texture2D" uid="uid://c7ypjyk0kdttx" path="res://Sprite/Life Barre/lifeBarRed2.png" id="3_7xoeh"]
+[ext_resource type="Script" path="res://Ennemies/enemyHealthBar.gd" id="4_s6tvm"]
+
+[node name="EnemyHealthBar" type="TextureProgressBar"]
+offset_right = 40.0
+offset_bottom = 40.0
+scale = Vector2(0.235, 0.268)
+texture_under = ExtResource("1_0pil0")
+texture_over = ExtResource("2_xbm4t")
+texture_progress = ExtResource("3_7xoeh")
+script = ExtResource("4_s6tvm")

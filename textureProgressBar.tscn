@@ -1,0 +1,20 @@
+[gd_scene load_steps=5 format=3 uid="uid://cp75kqe0lmlin"]
+
+[ext_resource type="Texture2D" uid="uid://cxb36wgtf7h1r" path="res://Sprite/Life Barre/lifeBarBlack.png" id="1_mv482"]
+[ext_resource type="Texture2D" uid="uid://chxuimth7oayr" path="res://Sprite/Life Barre/cadreLifeBarBlack4.png" id="2_o8wda"]
+[ext_resource type="Texture2D" uid="uid://bpkhuaqho1u7r" path="res://Sprite/Life Barre/lifeBarYellow.png" id="3_dohpj"]
+[ext_resource type="Script" path="res://gui/healtBar.gd" id="4_bto2v"]
+
+[node name="TextureProgressBar" type="TextureProgressBar"]
+offset_right = 400.0
+offset_bottom = 40.0
+scale = Vector2(0.235093, 0.268003)
+nine_patch_stretch = true
+stretch_margin_left = 4
+stretch_margin_top = 4
+stretch_margin_right = 4
+stretch_margin_bottom = 4
+texture_under = ExtResource("1_mv482")
+texture_over = ExtResource("2_o8wda")
+texture_progress = ExtResource("3_dohpj")
+script = ExtResource("4_bto2v")
